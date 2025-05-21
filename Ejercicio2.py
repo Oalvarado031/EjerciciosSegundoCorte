@@ -1,10 +1,10 @@
 def verificar_parentesis_balanceados(cadena):
-    pila = []  # Usamos una lista como pila
+    pila = []  # Se usa una lista como pila
     pares = {')': '(', '}': '{', ']': '['}  # Diccionario para verificar correspondencia
 
     for caracter in cadena:
         if caracter in '({[':
-            pila.append(caracter)  # Agrega paréntesis de apertura a la pila
+            pila.append(caracter)  # Se Agrega paréntesis de apertura a la pila
         elif caracter in ')}]':
             if not pila:
                 return False  # Si hay un cierre pero la pila está vacía, está desbalanceado
